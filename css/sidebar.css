@@ -1,0 +1,28 @@
+.sidebar{
+    width: 320px;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 16px 0 50px 0 rgba(14, 24, 80, 0.2);
+    /*float: left;
+    position: relative;
+    z-index: 2;*/
+}
+
+.sidebar__menu{
+    margin-top: 25px;
+}
+
+.sidebar__footer{
+    margin-left: 1em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+/*@media screen and (min-width: 1120px){
+    .sidebar {
+        box-shadow: none;
+    }
+}*/

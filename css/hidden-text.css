@@ -1,0 +1,10 @@
+.hidden-text{
+    display: flex;
+    align-items: center;
+}
+
+.hidden-text__icon{
+    border: none;
+    background-color: #F8F8F8;
+    padding: 0;
+}

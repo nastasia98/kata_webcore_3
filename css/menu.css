@@ -1,0 +1,18 @@
+.menu__list{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.menu__item{
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu__item:hover{
+    cursor: pointer;
+    background-color: #41F6D7;
+}
+
+.menu__link{
+    display: block;
+}

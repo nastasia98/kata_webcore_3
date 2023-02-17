@@ -1,75 +1,104 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="first.css">
-    <title>Первая часть</title>
+    <title>Menu</title>
 </head>
 <body>
-<div class="wrapper">
-    <header class="header header--hidden">
-        <div class="header__left-icons">
-            <button class="icon header__icon"><img src="img/burger.svg" alt="меню"></button>
-            <div class="line header__line header__line--hidden"></div>
-            <button class="icon header__icon"><img src="img/logo.svg" alt="логотип"></button>
+    <div class="sidebar">
+        <div>
+            <header class="top-bar">
+                <ul class="top-bar__left-icons">
+                    <li>
+                        <button class="icon icon__exit">
+                            <img src="img/exit.svg" alt="закрыть меню">
+                        </button>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="logo" src="img/logo.svg" alt="логотип">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="top-bar__right-icons">
+                    <li>
+                        <button class="icon">
+                            <img src="img/search.svg" alt="поиск">
+                        </button>
+                    </li>
+                </ul>
+            </header>
+            <nav class="menu sidebar__menu">
+                <ul class="menu__list reset-list">
+                    <li class="menu__item">
+                        <a class="link link--color--black link--focused--menu" href="#">Ремонт техники</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link link--color--black" href="#">Услуги и сервисы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link link--color--black" href="#">Корпоративным клиентам</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link link--color--black" href="#">Продавцам техники</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link link--color--black" href="#">Партнерам</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link link--color--black" href="#">Производителям</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link link--color--black" href="#">Наши сервисные центры</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link link--color--black" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="header__right-icons">
-            <button class="icon header__icon header__icon--hidden"><img src="img/call.svg" alt="позвонить"></button>
-            <button class="icon header__icon header__icon--hidden"><img src="img/chat.svg" alt="написать нам"></button>
-            <button class="icon header__icon header__icon--hidden"><img src="img/profile.svg" alt="ваш профиль">
-            </button>
-            <div class="line header__line"></div>
-        </div>
-    </header>
-    <div class="title">
-        <div class="title__text">
-            <div class="title-line"></div>
-            <h1 class="title-text">Услуги и сервисы</h1>
-        </div>
-        <div class="title__icon">
-            <button class="icon icon--desktop">
-                <span class="pretext pretext--hidden">Оставить заявку</span>
-                <img src="img/repair.svg" alt="оставить заявку">
-            </button>
-            <button class="icon icon--desktop">
-                <span class="pretext pretext--hidden">Статус ремонта</span>
-                <img src="img/checkstatus.svg" alt="показать статус ремонта">
-            </button>
-        </div>
+        <footer class="footer sidebar__footer">
+            <ul class="footer__list reset-list">
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img class="icon__image" src="img/call.svg" alt="позвонить">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img class="icon__image" src="img/chat.svg" alt="написать нам">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img class="icon__image" src="img/profile.svg" alt="ваш профиль">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <span class="footer__email pretext">mail@cps.com</span>
+            <span class="footer__phone">8 800 890 8900</span>
+            <ul class="languages reset-list">
+                <li class="languages__item">
+                    <button class="languages__button languages__button--active">RU</button>
+                </li>
+                <li class="languages__item">
+                    <button class="languages__button">EN</button>
+                </li>
+                <li class="languages__item">
+                    <button class="languages__button">CH</button>
+                </li>
+            </ul>
+        </footer>
     </div>
-    <main class="main">
-        <nav class="services wrapper__services">
-            <button class="services__item services__item--focused"><a class="services__link" href="#">Ремонтируемые
-                бренды</a></button>
-            <button class="services__item"><a class="services__link" href="#">Ремонтируемые устройства</a></button>
-            <button class="services__item"><a class="services__link" href="#">Цены на услуги</a></button>
-            <button class="services__item"><a class="services__link" href="#">Адреса сервисных центров</a></button>
-            <button class="services__item"><a class="services__link" href="#">Специальные цены</a></button>
-            <button class="services__item"><a class="services__link" href="#">Отзывы</a></button>
-        </nav>
-        <section class="content wrapper__content">
-            <article class="article">
-                <p class="text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <span class="text text--hidden--laptop">
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span>
-                <span class="text text--hidden--desktop">
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
-                    что подтверждает большое количество постоянных клиентов.
-                    Мы гордимся тем, что к нам обращаются по рекомендациям и,
-                    в свою очередь, советуют нас родным и близким.</span>
-                <div class="hidden-text wrapper__hidden-text">
-                    <button class="hidden-text__icon"><img src="img/expand.svg" alt="раскрыть текст"></button>
-                    <span class="pretext">Читать далее</span>
-                </div>
-            </article>
-            <img class="photo" src="img/main-phone.jpg" alt="вывеска">
-            <img class="photo photo--hidden" src="img/main.jpg" alt="вывеска">
-        </section>
-    </main>
-</div>
 </body>
 </html>

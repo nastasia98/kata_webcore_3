@@ -1,0 +1,28 @@
+.languages{
+    display: flex;
+    gap: 0.5em;
+}
+
+.languages__button{
+    border: none;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: TT Lakes, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1B1C21;
+}
+
+.languages__button:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.languages__button--active{
+    color: #7E7E82;
+}
+
+.languages__button--active:hover{
+    cursor: pointer;
+    font-weight: 600;
+}

@@ -1,0 +1,30 @@
+.divider{
+    display: flex;
+    align-items: center;
+}
+
+.divider::before{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+    position: relative;
+    right: 0.5rem;
+}
+
+.divider__logo::before{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .divider__logo::before {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1120px){
+    .divider::before{
+        display: none;
+    }
+}
