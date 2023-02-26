@@ -17,7 +17,7 @@
     background-color: #41F6D7;
 }
 
-.title__icon{
+.title__controls{
     position: absolute;
     display: flex;
     gap: 16px;
@@ -34,7 +34,7 @@
         width: 100%;
     }
 
-    .title__icon{
+    .title__controls{
         position: relative;
         top: 0;
         left: 0;
@@ -42,7 +42,7 @@
         gap: 30px;
     }
 
-    .title__link{
+    .title__control{
         display: flex;
         align-items: center;
         justify-content: center;

@@ -1,7 +1,7 @@
 @import "css/fonts.css";
 @import "css/reset-list.css";
 @import "css/wrapper.css";
-@import "css/top-bar.css";
+@import "css/topbar.css";
 @import "css/header.css";
 @import "css/title.css";
 @import "css/nav.css";
@@ -15,13 +15,15 @@
 @import "css/footer.css";
 @import "css/languages.css";
 @import "css/link.css";
-@import "css/icon.css";
+@import "css/control.css";
 @import "css/logo.css";
 @import "css/photo.css";
 @import "css/devider.css";
+@import "css/phone.css";
 
 html {
     box-sizing: border-box;
+    font-family: TT Lakes, Arial, sans-serif;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -32,5 +34,131 @@ body{
     background-color: #F8F8F8;
 }
 
+.address{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-style: normal;
+}
 
+.slider{
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5em;
+}
+
+.slider__header{
+    width: 110%;
+    background-image: linear-gradient(#F8F8F8, #FFFFFF);
+    border-top: 1px solid #D9FFF5;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.subtitle{
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    margin: 0;
+}
+
+.swiper-wrapper{
+  padding-left: 1em;
+}
+
+.slider__logo{
+    width: 240px;
+    height: 68px;
+    position: relative;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-bottom: 3em;
+    padding-left: 10px;
+}
+
+.slider__logo::after{
+    background-image: url("img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 1em;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #B5B6BC;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+    background: #B5B6BC;
+}
+
+.hidden-content{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-pagination {
+        display: none;
+    }
+
+    .slider__logo {
+        display: flex;
+        width: 224px;
+        margin: 0;
+    }
+
+    .swiper-wrapper{
+        flex-wrap: wrap;
+        gap: 0.8em;
+    }
+
+    .logo--hidden{
+        display: none;
+    }
+    
+    .hidden-content{
+        display: flex;
+        align-items: center;
+    }
+
+    .hidden-content--down{
+        margin-top: 10px;
+    }
+
+    .hidden-content__icon{
+        border: none;
+        background-color: #F8F8F8;
+        display: flex;
+        padding-left: 15px;
+        align-items: center;
+    }
+
+    .hidden-content--hide{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .slider__logo{
+        width: 240px;
+    }
+    .logo--show{
+        display: flex;
+    }
+}
 

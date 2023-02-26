@@ -3,7 +3,7 @@
     gap: 0.5em;
 }
 
-.languages__button{
+.languages__link{
     border: none;
     padding: 0;
     background-color: #ffffff;
@@ -13,16 +13,16 @@
     color: #1B1C21;
 }
 
-.languages__button:hover{
+.languages__link:hover{
     cursor: pointer;
     font-weight: bold;
 }
 
-.languages__button--active{
+.languages__link--active{
     color: #7E7E82;
 }
 
-.languages__button--active:hover{
+.languages__link--active:hover{
     cursor: pointer;
     font-weight: 600;
 }

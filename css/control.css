@@ -1,4 +1,4 @@
-.icon{
+.control{
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -8,15 +8,9 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.icon:hover{
+.control:hover{
     cursor: pointer;
     transform: scale(1.1);
-}
-
-.icon__image{
-    position: relative;
-    left: 10px;
-    top: 10px;
 }
 
 /*@media screen and (min-width: 1120px) {

@@ -1,12 +1,12 @@
-.top-bar{
+.topbar{
     display: flex;
     justify-content: space-between;
     background-color: #FFFFFF;
     padding: 1rem;
 }
 
-.top-bar__left-icons,
-.top-bar__right-icons {
+.topbar__left-controls,
+.topbar__right-controls {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,12 +16,12 @@
     margin: 0;
 }
 
-.top-bar__right-icons--hidden{
+.topbar__right-controls--hidden{
     display: none;
 }
 
 @media screen and (min-width: 768px){
-    .top-bar__right-icons--hidden{
+    .topbar__right-controls--hidden{
         display: flex;
         position: relative;
         right: 7rem;
@@ -29,7 +29,7 @@
 }
 
 @media screen and (min-width: 1120px) {
-    .top-bar--hidden {
+    .topbar--hidden {
         display: none;
     }
 }
