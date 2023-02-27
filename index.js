@@ -1,3 +1,5 @@
+//swiper
+
 let swiper = Swiper;
 let init = false;
 
@@ -38,6 +40,7 @@ window.addEventListener('resize', function() {
     swiperMode();
 });
 
+// show/hide "show more"
 
 let hiddenBrands = document.querySelectorAll('.logo--hidden')
 let hiddenContentDown = document.querySelector('.hidden-content__icon')

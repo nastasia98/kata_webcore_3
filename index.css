@@ -1,0 +1,29 @@
+@import "css_common/fonts.css";
+@import "css_common/start.css";
+@import "css_common/reset-list.css";
+@import "css_common/swiper.css";
+@import "css_blocks/wrapper.css";
+@import "css_blocks/topbar.css";
+@import "css_blocks/header.css";
+@import "css_blocks/title.css";
+@import "css_blocks/nav.css";
+@import "css_blocks/main.css";
+@import "css_blocks/article.css";
+@import "css_blocks/text.css";
+@import "css_blocks/hidden-text.css";
+@import "css_blocks/pretext.css";
+@import "css_blocks/sidebar.css";
+@import "css_blocks/menu.css";
+@import "css_blocks/footer.css";
+@import "css_blocks/languages.css";
+@import "css_blocks/link.css";
+@import "css_blocks/control.css";
+@import "css_blocks/photo.css";
+@import "css_blocks/devider.css";
+@import "css_blocks/address.css";
+@import "css_blocks/phone.css";
+@import "css_blocks/logo.css";
+@import "css_blocks/slider.css";
+@import "css_blocks/hidden-content.css";
+
+
