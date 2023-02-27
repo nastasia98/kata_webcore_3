@@ -1,0 +1,87 @@
+.brands{
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5em;
+}
+
+.brands__header{
+    width: 110%;
+    background-image: linear-gradient(#F8F8F8, #FFFFFF);
+    border-top: 1px solid #D9FFF5;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.brands__subtitle{
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    margin: 0;
+}
+
+.brands__list{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.brands__item{
+    display: inline-block;
+}
+
+.brands__logo{
+    width: 240px;
+    height: 68px;
+    position: relative;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-bottom: 3em;
+    padding-left: 10px;
+}
+
+.brands__logo::after{
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 1em;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .brands__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8em;
+    }
+
+    .brands__logo {
+        display: flex;
+        margin: 0;
+        width: 224px;
+    }
+
+    .brands__logo--hidden{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .brands__logo {
+        width: 240px;
+    }
+
+    .brands__logo--show{
+        display: flex;
+    }
+}

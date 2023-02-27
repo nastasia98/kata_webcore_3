@@ -1,0 +1,11 @@
+.button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    border: none;
+    background-color: transparent;
+}
+
+.button__control{
+    padding-top: 0.65em;
+}

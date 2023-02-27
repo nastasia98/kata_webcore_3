@@ -10,61 +10,78 @@
     <title>Бренды</title>
 </head>
 <body>
-<div class="slider swiper">
-    <header class="slider__header">
-        <h2 class="slider__subtitle">Ремонт техники различных брендов</h2>
+<div class="brands swiper">
+    <header class="brands__header">
+        <h2 class="brands__subtitle">Ремонт техники различных брендов</h2>
     </header>
-    <section class="slider__main swiper-wrapper">
-        <a class="logo logo__slider swiper-slide" href="#">
-            <img src="img/lenovo.svg" alt="леново">
-        </a>
-        <a class="logo logo__slider swiper-slide" href="#">
-            <img src="img/samsung.svg" alt="леново">
-        </a>
-        <a class="logo logo__slider swiper-slide" href="#">
-            <img src="img/apple.svg" alt="леново">
-        </a>
-        <a class="logo logo__slider swiper-slide" href="#">
-            <img src="img/hp.svg" alt="леново">
-        </a>
-        <a class="logo logo__slider swiper-slide" href="#">
-            <img src="img/sony.svg" alt="леново">
-        </a>
-        <a class="logo logo__slider swiper-slide" href="#">
-            <img src="img/aser.svg" alt="леново">
-        </a>
-        <a class="logo logo__slider swiper-slide logo--hidden" href="#">
-            <img src="img/bosh.svg" alt="леново">
-        </a>
-        <a class="logo logo__slider swiper-slide logo--hidden" href="#">
-            <img src="img/sonic.svg" alt="леново">
-        </a>
-        <a class="logo logo__slider swiper-slide logo--hidden logo--show" href="#">
-            <img src="img/apple.svg" alt="леново">
-        </a>
-        <a class="logo logo__slider swiper-slide logo--hidden logo--show" href="#">
-            <img src="img/lenovo.svg" alt="леново">
-        </a>
-        <a class="logo logo__slider swiper-slide logo--hidden" href="#">
-            <img src="img/samsung.svg" alt="леново">
-        </a>
-    </section>
-        <div class="hidden-content hidden-content--down">
-            <button class="hidden-content__icon">
-                <img src="img/expand.svg" alt="раскрыть текст">
-                <span class="pretext">Показать все</span>
-            </button>
-        </div>
-        <div class="hidden-content">
-            <button class="hidden-content__icon hidden-content__icon--up hidden-content--hide">
-                <img src="img/unexpand.svg" alt="раскрыть текст">
-                <span class="pretext">Скрыть</span>
-            </button>
-        </div>
+    <ul class="brands__list swiper-wrapper reset-list">
+        <li class="brands__item swiper-slide">
+            <a class="brands__logo" href="#">
+                <img src="img/lenovo.svg" alt="леново">
+            </a>
+        </li>
+        <li class="brands__item swiper-slide">
+            <a class="brands__logo" href="#">
+                <img src="img/samsung.svg" alt="леново">
+            </a>
+        </li>
+        <li class="brands__item swiper-slide">
+            <a class="brands__logo" href="#">
+                <img src="img/apple.svg" alt="леново">
+            </a>
+        </li>
+        <li class="brands__item swiper-slide">
+            <a class="brands__logo" href="#">
+                <img src="img/hp.svg" alt="леново">
+            </a>
+        </li>
+        <li class="brands__item swiper-slide">
+            <a class="brands__logo" href="#">
+                <img src="img/sony.svg" alt="леново">
+            </a>
+        </li>
+        <li class="brands__item swiper-slide">
+            <a class="brands__logo" href="#">
+                <img src="img/aser.svg" alt="леново">
+            </a>
+        </li>
+       <li class="brands__item swiper-slide">
+            <a class="brands__logo swiper-slide brands__logo--hidden brands__logo--show" href="#">
+                <img src="img/bosh.svg" alt="леново">
+            </a>
+        </li>
+        <li class="brands__item swiper-slide">
+            <a class="brands__logo swiper-slide brands__logo--hidden brands__logo--show" href="#">
+                <img src="img/sonic.svg" alt="леново">
+            </a>
+        </li>
+        <li class="brands__item swiper-slide">
+            <a class="brands__logo swiper-slide brands__logo--hidden" href="#">
+                <img src="img/apple.svg" alt="леново">
+            </a>
+        </li>
+        <li class="brands__item swiper-slide">
+            <a class="brands__logo swiper-slide brands__logo--hidden " href="#">
+                <img src="img/lenovo.svg" alt="леново">
+            </a>
+        </li>
+        <li class="brands__item swiper-slide">
+            <a class="brands__logo swiper-slide brands__logo--hidden" href="#">
+                <img src="img/samsung.svg" alt="леново">
+            </a>
+        </li>
+    </ul>
+    <div class="hidden-content">
+        <button class="hidden-content__button">
+            <img src="img/expand.svg" alt="раскрыть текст">
+            <span class="pretext">Показать все</span>
+        </button>
+    </div>
     <div class="swiper-pagination"></div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
+
 </body>
 </html>

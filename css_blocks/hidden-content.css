@@ -8,16 +8,16 @@
         align-items: center;
     }
 
-    .hidden-content--down{
-        margin-top: 10px;
-    }
-
-    .hidden-content__icon{
+    .hidden-content__button{
         border: none;
         background-color: #F8F8F8;
         display: flex;
         padding-left: 15px;
         align-items: center;
+    }
+
+    .hidden-content--down{
+        margin-top: 10px;
     }
 
     .hidden-content--hide{

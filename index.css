@@ -4,6 +4,7 @@
 @import "css_common/swiper.css";
 @import "css_blocks/wrapper.css";
 @import "css_blocks/topbar.css";
+@import "css_blocks/button.css";
 @import "css_blocks/header.css";
 @import "css_blocks/title.css";
 @import "css_blocks/nav.css";
@@ -23,7 +24,7 @@
 @import "css_blocks/address.css";
 @import "css_blocks/phone.css";
 @import "css_blocks/logo.css";
-@import "css_blocks/slider.css";
+@import "css_blocks/brands.css";
 @import "css_blocks/hidden-content.css";
 
 

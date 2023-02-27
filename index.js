@@ -11,9 +11,9 @@ function swiperMode() {
     if(mobile.matches) {
         if (!init) {
             init = true;
-            swiper = new Swiper(".slider", {
+            swiper = new Swiper(".brands", {
                 slidesPerView: 'auto',
-                spaceBetween: 10,
+                spaceBetween: 15,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
@@ -40,24 +40,28 @@ window.addEventListener('resize', function() {
     swiperMode();
 });
 
+
 // show/hide "show more"
 
-let hiddenBrands = document.querySelectorAll('.logo--hidden')
-let hiddenContentDown = document.querySelector('.hidden-content__icon')
-let hiddenContentUp = document.querySelector('.hidden-content--hide')
+let hiddenBrands = document.querySelectorAll('.brands__logo--hidden') //content
+let showContentButton = document.querySelector('.hidden-content__button') //btn
+let hiddenContentIcon = showContentButton.querySelector('img')
+let hiddenContentSpan = showContentButton.querySelector('span')
 
-hiddenContentDown.addEventListener('click', function(){
-    for (let i = 0; i < hiddenBrands.length; i++) {
-        hiddenBrands[i].classList.remove('logo--hidden')
-    }
-    hiddenContentUp.classList.remove('hidden-content--hide')
-    hiddenContentDown.classList.add('hidden-content--hide')
-})
+showContentButton.addEventListener('click', btnClick)
 
-hiddenContentUp.addEventListener('click', function() {
-    for (let i = 0; i < hiddenBrands.length; i++) {
-        hiddenBrands[i].classList.add('logo--hidden')
+function btnClick(){
+    if (hiddenBrands[0].classList.contains('brands__logo--hidden')){
+        hiddenContentSpan.textContent = 'Скрыть'
+        hiddenContentIcon.style.transform = 'rotate(180deg)'
+        showContentButton.classList.add('hidden-content--down')
+    } else {
+        hiddenContentSpan.textContent = 'Показать все'
+        hiddenContentIcon.style.transform = 'rotate(360deg)'
+        showContentButton.classList.remove('hidden-content--down')
+
     }
-    hiddenContentDown.classList.remove('hidden-content--hide')
-    hiddenContentUp.classList.add('hidden-content--hide')
-})
+    for (let i = 0; i < hiddenBrands.length; i++) {
+        hiddenBrands[i].classList.toggle('brands__logo--hidden')
+    }
+}
