@@ -8,7 +8,6 @@
     gap: 1em;
     box-shadow: 16px 0 50px 0 rgba(14, 24, 80, 0.2);
     /*float: left;
-    position: relative;
     z-index: 2;*/
 }
 
@@ -25,10 +24,16 @@
     right: 1em;
 }
 
+.sidebar__menu{
+    padding-bottom: 230px;
+}
+
 .sidebar__footer{
     position: absolute;
     margin-left: 1em;
-    bottom: 1.5em;
+    height: 180px;
+    bottom: 0;
+
 }
 
 /*@media screen and (min-width: 1120px){
