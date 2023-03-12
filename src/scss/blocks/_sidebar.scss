@@ -1,0 +1,58 @@
+$item-bg-color: #FFFFFF;
+
+.sidebar {
+  position: fixed;
+  width: 320px;
+  min-height: 100vh;
+  background-color: $item-bg-color;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  box-shadow: 16px 0 50px 0 rgba(14, 24, 80, 0.2);
+  z-index: 2;
+
+  @media screen and (min-width: 1366px) {
+    box-shadow: none;
+    position: relative;
+  }
+
+  &__topbar {
+    position: relative;
+    display: flex;
+    padding: 1rem;
+    gap: 1em;
+    align-items: center;
+
+    li:last-child {
+      position: absolute;
+      right: 1em;
+    }
+  }
+
+  &__menu {
+    padding-bottom: 230px;
+
+    @media screen and (min-width: 1366px) {
+      padding-bottom: 150px;
+    }
+  }
+
+  &__communication {
+    position: absolute;
+    margin-left: 1em;
+    height: 180px;
+    bottom: 0;
+
+    @media screen and (min-width: 1366px) {
+      position: static;
+    }
+  }
+
+  &--hidden {
+    display: none;
+
+    @media screen and (min-width: 1366px) {
+      display: block;
+    }
+  }
+}

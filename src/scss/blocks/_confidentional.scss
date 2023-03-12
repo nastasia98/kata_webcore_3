@@ -1,0 +1,18 @@
+$control-color: #FF3E79;
+$subtitle-color: #7E7E82;
+
+.confidentional{
+  color: $subtitle-color;
+  font-weight: 600;
+  margin: 0;
+
+  &--color--red{
+    color: $control-color;
+    text-decoration: none;
+
+    &:hover{
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}

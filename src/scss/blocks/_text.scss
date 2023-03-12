@@ -1,0 +1,20 @@
+$text-color: #1B1C21;
+$subtitle-color: #7E7E82;
+
+.text{
+    color: $text-color;
+    margin: 0;
+
+  &--hidden{
+    display: inline-block;
+
+    @media screen and (min-width: 768px){
+       display: none;
+      }
+  }
+
+  &--color--grey{
+    color: $subtitle-color;
+    font-weight: 600;
+  }
+}

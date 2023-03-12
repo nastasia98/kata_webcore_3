@@ -1,0 +1,24 @@
+$fon-color: #F8F8F8;
+
+.expand-button{
+    display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: $fon-color;
+    padding-left: 15px;
+  }
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &__img{
+    @media screen and (min-width: 768px) {
+      transform: rotate(180deg);
+    }
+  }
+
+}

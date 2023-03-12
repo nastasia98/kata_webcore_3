@@ -1,0 +1,17 @@
+$fon-color: #F8F8F8;
+
+.showtext-button{
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: $fon-color;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &__img{
+      transform: rotate(180deg);
+  }
+}
+

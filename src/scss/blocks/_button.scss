@@ -1,0 +1,43 @@
+$control-color: #FF3E79;
+$item-bg-color: #FFFFFF;
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border: none;
+  background-color: transparent;
+
+  &__control {
+     padding-top: 0.65em;
+   }
+
+  &__order{
+    float: right;
+    background-color: $control-color;
+    color: $item-bg-color;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 120px;
+    height: 32px;
+    border-radius: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 11em;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover{
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+
+    @media screen and (min-width: 768px){
+      position: relative;
+      top: 0.8em;
+    }
+  }
+}

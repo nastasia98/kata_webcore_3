@@ -1,0 +1,10 @@
+.header {
+  position: relative;
+
+  @media screen and (min-width: 1366px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem 0 0;
+  }
+}

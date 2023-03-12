@@ -1,0 +1,32 @@
+$item-bg-color: #FFFFFF;
+$text-color: #1B1C21;
+$subtitle-color: #7E7E82;
+
+.languages{
+    display: flex;
+    gap: 0.5em;
+
+  &__link{
+     border: none;
+     padding: 0;
+     background-color: $item-bg-color;
+     font-weight: 600;
+     font-size: 16px;
+     color: $text-color;
+
+    &:hover{
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    &--active{
+      color: $subtitle-color;
+
+      &:hover{
+        cursor: pointer;
+        font-weight: 600;
+      }
+    }
+
+   }
+}

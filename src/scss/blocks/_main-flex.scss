@@ -1,0 +1,14 @@
+.main-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+  &--opacity{
+    opacity: 0.1;
+
+    @media screen and (min-width: 1366px){
+      opacity: 1;
+    }
+  }
+}
+

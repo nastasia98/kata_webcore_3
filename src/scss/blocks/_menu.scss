@@ -1,0 +1,25 @@
+$highlight-color: #41F6D7;
+
+.menu {
+
+  margin-top: 1em;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  &__item {
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $highlight-color;
+    }
+  }
+
+  &__link {
+    display: block;
+  }
+}

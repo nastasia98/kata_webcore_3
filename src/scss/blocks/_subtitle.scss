@@ -1,0 +1,15 @@
+$fon-color: #F8F8F8;
+$item-bg-color: #FFFFFF;
+$highlight-color: #41F6D7;
+$subtitle-color: #7E7E82;
+
+.subtitle {
+  background-image: linear-gradient($fon-color, $item-bg-color);
+  border-top: 1px solid $highlight-color;
+  padding: 1em;
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $subtitle-color;
+}

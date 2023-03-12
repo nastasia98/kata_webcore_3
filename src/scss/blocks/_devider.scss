@@ -1,0 +1,32 @@
+$border-color: #EAEAEA;
+
+.divider {
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 32px;
+    background-color: $border-color;
+    position: relative;
+    right: 0.5rem;
+
+    @media screen and (min-width: 1366px) {
+      display: none;
+    }
+  }
+
+  &__logo::before {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+
+
+

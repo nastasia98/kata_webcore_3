@@ -1,0 +1,22 @@
+.photo {
+
+  margin-left: -1rem;
+  margin-right: -1rem;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    min-width: 360px;
+    height: 100%;
+    border-radius: 5%;
+  }
+
+  @media screen and (min-width: 1366px) {
+    min-width: 530px;
+    height: 300px;
+    border-radius: 3%;
+  }
+}
+
+
+
+

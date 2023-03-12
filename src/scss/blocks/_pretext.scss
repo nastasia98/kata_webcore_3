@@ -1,0 +1,19 @@
+$text-color: #1B1C21;
+
+.pretext {
+  font-family: TT Lakes, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: $text-color;
+  white-space: nowrap;
+  text-decoration: none;
+
+  &--hidden {
+    display: none;
+
+    @media screen and (min-width: 1366px) {
+      display: inline;
+    }
+  }
+}
+

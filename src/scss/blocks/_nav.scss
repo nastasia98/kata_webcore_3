@@ -1,0 +1,20 @@
+$fon-color: #F8F8F8;
+
+.nav {
+
+  &__list {
+    background-color: $fon-color;
+    display: flex;
+    overflow: auto;
+
+    @media screen and (min-width: 1366px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+}

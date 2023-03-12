@@ -1,0 +1,25 @@
+$control-color: #FF3E79;
+
+.control {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: $control-color;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+    .control__exit{
+        display: none;
+    }
+    .top-bar__left-controls{
+        gap: 0;
+    }
+}

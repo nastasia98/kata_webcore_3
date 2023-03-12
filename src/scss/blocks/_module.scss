@@ -1,0 +1,41 @@
+$item-bg-color: #FFFFFF;
+$border-color: #EAEAEA;
+
+.module{
+  width: 320px;
+  min-height: 100vh;
+  background-color: $item-bg-color;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  z-index: 2;
+
+  @media screen and (min-width: 1366px){
+    width: 440px;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 20);
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+  }
+
+  &__title{
+    font-size: 24px;
+  }
+
+  &__button{
+    position: static;
+    display: flex;
+    align-self: end;
+  }
+
+  &--hidden{
+    display: none;
+  }
+}

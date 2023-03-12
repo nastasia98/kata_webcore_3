@@ -1,0 +1,12 @@
+.grid{
+
+  @media screen and (min-width: 1366px){
+    display: grid;
+    grid-template-columns: 320px 1fr;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}

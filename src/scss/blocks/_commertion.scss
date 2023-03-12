@@ -1,0 +1,21 @@
+.commertion{
+  margin-left: 2em;
+  max-width: 420px;
+  margin-right: 1em;
+
+  &__text{
+    margin-top: 0;
+  }
+
+  &__link{
+    white-space: normal;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &__img{
+    padding-left: 5px;
+  }
+}
